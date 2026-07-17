@@ -2,14 +2,14 @@ import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 from tkinter.scrolledtext import ScrolledText
 import threading
-import renomeador
+import backend_r
 
 
 class RenomeadorApp:
 
     def __init__(self, root):
         self.root = root
-        self.root.title("JMBA Softwares - Renomeador Inteligente de Fotos 1.0")
+        self.root.title("JMBA Softwares - ChronoPhoto 1.0")
         self.root.geometry("800x500")
         self.root.minsize(700, 450)
 
@@ -120,7 +120,7 @@ class RenomeadorApp:
 
     def executar(self):
         try:
-            renomeador.executar(pasta=self.pasta.get(), callback=self.escrever_log)
+            backend__r.executar(pasta=self.pasta.get(), callback=self.escrever_log)
             self.alterar_status("Concluído.")
         except Exception as e:
             self.escrever_log(f"ERRO: {e}")
