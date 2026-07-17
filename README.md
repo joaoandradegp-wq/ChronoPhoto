@@ -6,7 +6,7 @@ Ele utiliza o ExifTool para identificar a data real de captura dos arquivos e re
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Beta-orange">
+  <img src="https://img.shields.io/badge/Status-Stable-success">
   <img src="https://img.shields.io/badge/Plataforma-Linux%20Mint%20%2F%20Linux-blue">
   <img src="https://img.shields.io/badge/Linguagem-Python-green">
   <img src="https://img.shields.io/badge/Interface-Tkinter-purple">
@@ -15,9 +15,55 @@ Ele utiliza o ExifTool para identificar a data real de captura dos arquivos e re
 
 ---
 
+## 🚀 Instalação
+
+Clone o projeto:
+
+```bash
+git clone https://github.com/joaoandradegp-wq/ChronoPhoto.git
+```
+
+Acesse a pasta:
+
+```bash
+cd ChronoPhoto
+```
+
+Execute:
+
+```bash
+python3 main.py
+```
+
+<br>
+
+O ChronoPhoto verifica automaticamente se o **ExifTool** está instalado.
+
+Caso não esteja disponível, o programa realiza a instalação automaticamente.
+
+Instalação manual:
+
+```bash
+sudo apt install libimage-exiftool-perl
+```
+
+<br>
+
+**Sistemas compatíveis:**
+
+| Sistema | Suporte |
+|---------|---------|
+| Linux Mint | ✅ |
+| Ubuntu | ✅ |
+| Debian | ✅ |
+| Windows | 🚧 Futuro suporte |
+
+---
+
 ## ✨ Recursos
 
 <table>
+
 <tr>
 
 <td width="50%" valign="top">
@@ -30,10 +76,9 @@ Ele utiliza o ExifTool para identificar a data real de captura dos arquivos e re
 <li>Dispensa uso de linha de comando</li>
 <li>Suporte para grandes coleções de arquivos</li>
 </ul>
-
 <br>
-
 </td>
+
 
 <td width="50%" valign="top">
 
@@ -72,7 +117,7 @@ Ele utiliza o ExifTool para identificar a data real de captura dos arquivos e re
 </ul>
 
 <li>Seleciona automaticamente a data mais confiável disponível</li>
-
+<br>
 </ul>
 
 </td>
@@ -85,9 +130,9 @@ Ele utiliza o ExifTool para identificar a data real de captura dos arquivos e re
 <ul>
 
 <li>Utiliza ExifTool em modo completo</li>
-<li>Processa todos os metadados disponíveis</li>
+<li>Lê todos os metadados disponíveis</li>
 <li>Maior precisão na identificação da data original</li>
-<li>Suporte para imagens e arquivos multimídia</li>
+<li>Suporte para fotos e arquivos multimídia</li>
 
 </ul>
 
@@ -112,10 +157,10 @@ AAAA_MM_DD_0002.jpg
 AAAA_MM_DD_0003.jpg
 </pre>
 
-<li>Agrupamento por data de captura</li>
+<li>Agrupamento por dia da captura</li>
 <li>Ordenação por data e nome original</li>
 <li>Controle automático de conflitos</li>
-
+<br>
 </ul>
 
 </td>
@@ -127,9 +172,9 @@ AAAA_MM_DD_0003.jpg
 
 <ul>
 
-<li>Verifica a existência do ExifTool</li>
+<li>Verifica se o ExifTool está disponível</li>
 <li>Instala automaticamente quando necessário</li>
-<li>Compatível com sistemas Debian:</li>
+<li>Compatível com sistemas Debian-based:</li>
 
 <ul>
 <li>Linux Mint</li>
@@ -152,8 +197,8 @@ AAAA_MM_DD_0003.jpg
 
 <ul>
 
-<li>Log visual durante a execução</li>
-<li>Exibe cada etapa do processo:</li>
+<li>Log visual durante execução</li>
+<li>Mostra todas as etapas do processo</li>
 
 <pre>
 Verificando ExifTool...
@@ -165,9 +210,9 @@ Analisando datas...
 Renomeando: 15234/30000
 </pre>
 
-<li>Execução em segundo plano</li>
+<li>Processamento em segundo plano</li>
 <li>Interface permanece responsiva</li>
-
+<br>
 </ul>
 
 </td>
@@ -180,7 +225,7 @@ Renomeando: 15234/30000
 <ul>
 
 <li>Não altera conteúdo dos arquivos</li>
-<li>Modifica somente os nomes</li>
+<li>Modifica apenas os nomes</li>
 <li>Mantém extensões originais</li>
 <li>Verifica conflitos antes da alteração</li>
 
@@ -194,53 +239,13 @@ Renomeando: 15234/30000
 
 ---
 
-## 📦 Requisitos
+## 🖥️ Como utilizar
 
-<ul>
-
-<li>Linux Mint / Ubuntu / Debian</li>
-<li>Python 3</li>
-<li>Tkinter</li>
-<li>ExifTool</li>
-
-</ul>
-
-
-O ChronoPhoto verifica automaticamente a instalação do ExifTool.
-
-Instalação manual:
-
-```bash
-sudo apt install libimage-exiftool-perl
-```
-
----
-
-## 🚀 Instalação
-
-Clone o projeto:
-
-```bash
-git clone https://github.com/joaoandradegp-wq/ChronoPhoto.git
-```
-
-Acesse a pasta:
-
-```bash
-cd ChronoPhoto
-```
-
-Execute:
+1. Execute o ChronoPhoto:
 
 ```bash
 python3 main.py
 ```
-
----
-
-## 🖥️ Como utilizar
-
-1. Execute o ChronoPhoto
 
 2. Clique em:
 
@@ -248,7 +253,7 @@ python3 main.py
 Selecionar...
 ```
 
-3. Escolha a pasta contendo suas fotos
+3. Escolha a pasta contendo suas fotos.
 
 4. Clique em:
 
@@ -256,7 +261,7 @@ Selecionar...
 Iniciar
 ```
 
-5. O processo será executado automaticamente:
+5. O processamento será realizado automaticamente:
 
 ```
 Verificando ExifTool...
@@ -358,7 +363,7 @@ ChronoPhoto/
 
 ## 📌 Campos de Data Utilizados
 
-O ChronoPhoto busca as datas nesta ordem:
+O ChronoPhoto busca as datas seguindo esta prioridade:
 
 ```
 1. DateTimeOriginal
@@ -380,19 +385,33 @@ Data de alteração do arquivo
 
 ---
 
+## 📦 Requisitos
+
+<ul>
+
+<li>Python 3</li>
+
+<li>Tkinter</li>
+
+<li>ExifTool</li>
+
+<li>Permissão de escrita na pasta selecionada</li>
+
+</ul>
+
+---
+
 ## ⚠️ Observações
 
 <ul>
 
 <li>Desenvolvido inicialmente para Linux Mint e sistemas baseados em Debian</li>
 
-<li>Necessário possuir permissão de escrita na pasta selecionada</li>
+<li>A leitura completa dos metadados oferece maior precisão, porém pode levar mais tempo em grandes coleções</li>
 
-<li>Apenas os nomes dos arquivos são modificados</li>
+<li>Arquivos originais não são modificados, apenas seus nomes</li>
 
-<li>Arquivos grandes podem levar mais tempo devido à leitura completa dos metadados</li>
-
-<li>A leitura completa oferece maior precisão que métodos rápidos de análise</li>
+<li>O tempo de processamento depende da quantidade de arquivos e do hardware utilizado</li>
 
 </ul>
 
@@ -402,7 +421,7 @@ Data de alteração do arquivo
 
 <p align="center">
 
-<img width="600" alt="ChronoPhoto Screenshot" src="https://github.com/user-attachments/assets/IMAGEM_AQUI">
+<img width="465" height="351" alt="image" src="https://github.com/user-attachments/assets/386de818-c616-4fc8-9b3a-c7432d6b6540" />
 
 </p>
 
